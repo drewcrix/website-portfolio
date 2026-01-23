@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Drew Crix" />
+  <meta name="author" content="Drew Crix" />
+  <title>About | Drew Crix</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+  
+  <style>
+    body { padding-top: 80px; }
+    .page-bg {
+      background: linear-gradient(135deg, #ffffff 0%, #f7f7fb 45%, #f1f3f7 100%);
+      min-height: 100vh;
+    }
+    .hero-card {
+      border-radius: 22px;
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    .avatar-wrap {
+      width: 200px;
+      height: 200px;
+      border-radius: 999px;
+      overflow: hidden;
+      border: 6px solid rgba(255,255,255,0.9);
+      box-shadow: 0 18px 50px rgba(0,0,0,0.12);
+      background: linear-gradient(135deg, #f3f4f6, #ffffff);
+    }
+    .avatar-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .soft-card {
+      border-radius: 18px;
+      background: rgba(255,255,255,0.70);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+    .muted-strong { color: rgba(0,0,0,0.62); }
+    footer a { text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body class="page-bg">
+
+  <!-- NAVBAR (your regular one) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="title" href="drewcrixwebsite.html">Drew Crix</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item"><a class="nav-link" href="drewcrixwebsite.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Featured Projects
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="thesis.html">Thesis</a></li>
+              <li><a class="dropdown-item" href="recycling-sorter.html">Recycling Sorter</a></li>
+              <li><a class="dropdown-item" href="waterborne-gpr.html">Waterborne GPR Experiment</a></li>
+              <li><a class="dropdown-item" href="hotspot-tracker.html">Hotspot Communication Tracker</a></li>
+              <li><a class="dropdown-item" href="brainwaves-ssl.html">Interpreting Brainwaves with SSL</a></li>
+              <li><a class="dropdown-item" href="Competitions.html">Competitions</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link active" href="about_me.html">About</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-2" href="contact.html">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5" style="max-width: 980px;">
+
+    
+   <section class="hero-card p-4 p-md-5 mb-5 text-center">
+
+  <!-- Headshot -->
+  <div class="avatar-wrap mx-auto mb-4">
+    <img src="headshot[861].jpeg" alt="Drew Crix headshot" />
+  </div>
+
+  <!-- Name -->
+  <h1 class="display-5 fw-bold mb-1">Drew Crix</h1>
+
+  <!-- Title -->
+  <div class="fs-4 muted-strong mb-1 accent" id = "pad">
+    Engineering Physics (Mechanical)
+  </div>
+
+  <!-- About -->
+  <h2 class="about-title">About Me</h2>
+
+  <p class="fs-5 mx-auto" style="line-height: 1.6; max-width: 720px;">
+    Hi i'm Drew! — I am an Engineering Physics student at Queen's University. I strive to contribute to society in a meaningful way through my service, innovation, and work. I am a quick learner with a positive outlook, enthusiastic, and hard working. I am excited and passionate about the current developments leading towards a sustainable future and I am eager to apply scientific and engineering principles to contribute towards these goals. I am always looking for great opportunities! Feel free to reach out anytime.
+  </p>
+
+</section>
+
+
+    <!-- EDUCATION + AWARDS -->
+    <section class="mb-5">
+      <div class="row g-4">
+        <!-- Education -->
+        <div class="col-md-6">
+          <div class="soft-card p-4 h-100">
+            <h3 class="section-title mb-3">Education</h3>
+
+            <div class="mb-3">
+              <div class="fw-bold fs-5">BASc — Engineering Physics (Mechanical Option)</div>
+              <div class="text-muted">Queen’s University • 2020–Present</div>
+            </div>
+
+            <div class="mb-0">
+              <div class="fw-bold fs-5">Robert Tyre Jones Jr Scholar Exchange Student — Physics </div>
+              <div class="text-muted">University of St. Andrews • 2022–2023</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Awards -->
+        <div class="col-md-6">
+          <div class="soft-card p-4 h-100">
+            <h3 class="section-title mb-3">Accomplishments & Awards</h3>
+
+            <div class="mb-3">
+              <div class="fw-bold fs-5">University</div>
+              <div class="text-muted">Dean's Scholar • OUA Academic All Star • NSERC USRA Recipient • Support Our Troops National Scholarhip • R.H Clark Applied Science Centennial Scholarship • Albert H. Ruddel Award • Most Improved Athlete (rowing)</div>
+            </div>
+
+            <div class="mb-0">
+              <div class="fw-bold fs-5">High School</div>
+              <div class="text-muted">Paul and Helene Demarais Family Scholarship • Loran Scholar Semi Finalist • Morehead-Cain Semi Finalist • LCS Community Service Award</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LINKS -->
+    <section class="text-center pb-4">
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://www.linkedin.com/in/drewcrix" target="_blank" rel="noopener" class="text-decoration-none">
+          LinkedIn
+        </a>
+        <a href="https://github.com/drewcrix" target="_blank" rel="noopener" class="text-decoration-none">
+          GitHub
+        </a>
+        <a href="reports/CV.pdf" target="_blank" rel="noopener" class="text-decoration-none">
+          Resume
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

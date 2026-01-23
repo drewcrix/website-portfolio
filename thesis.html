@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Thesis project details for Drew Crix." />
+  <meta name="author" content="Drew Crix" />
+  <title>Thesis | Drew Crix</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .thesis-wrap { max-width: 900px; }
+
+    /* Image: responsive, centered, and capped in size (best practice) */
+    .thesis-img {
+      max-width: 720px;     /* <-- makes it smaller on desktop */
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Optional: allow a slightly larger image on large screens */
+    @media (min-width: 992px) {
+      .thesis-img {
+        max-width: 780px;
+      }
+    }
+
+    .meta-badges .badge {
+      border: 1px solid #dee2e6;
+      background-color: #f8f9fa;
+      color: #212529;
+      font-weight: 500;
+    }
+
+    footer a { text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar (unchanged) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="title" href="drewcrixwebsite.html">Drew Crix</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="drewcrixwebsite.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="drewcrixwebsite.html#features" role="button">Featured Projects</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Competitions.html">Competitions</a></li>
+              <li><a class="dropdown-item" href="recycling-sorter.html">Recycling Sorter</a></li>
+              <li><a class="dropdown-item" href="waterborne-gpr.html">Waterborne GPR Experiment</a></li>
+              <li><a class="dropdown-item" href="hotspot-tracker.html">Hotspot Communication Tracker</a></li>
+              <li><a class="dropdown-item" href="brainwaves-ssl.html">Interpreting Brainwaves with SSL</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-2" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container thesis-wrap">
+
+      <!-- Image FIRST (now smaller on desktop) -->
+      <div class="mb-4">
+        <img src="detonationPulse.PNG"
+             class="img-fluid thesis-img"
+             alt="Thesis project figure" id = "smalldet">
+      </div>
+
+      <!-- Title -->
+      <h1 class="fw-bold mb-2">Schlieren Diagnostic System for Flow Visulaization</h1>
+
+      <!-- Timeline + badges -->
+      <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+        <span class="text-muted small me-2">Sept 2024 – Apr 2025</span>
+        <div class="meta-badges d-flex flex-wrap gap-2">
+          <span class="badge rounded-pill">DAQ</span>
+          <span class="badge rounded-pill">LTspice</span>
+          <span class="badge rounded-pill">KiCad/Altium</span>
+          <span class="badge rounded-pill">LabVIEW</span>
+          <span class="badge rounded-pill">Optics</span>
+          <span class="badge rounded-pill">Signal Integrity</span>
+        </div>
+      </div>
+
+      <!-- One paragraph -->
+      <p class="lead mb-4">
+        My thesis involved the end-to-end design and calibration of a schlieren imaging system for detonation diagnostics, as well as the development of a four-layer, current-amplifying PCB for high-speed LED pulsing, capable of maintaining signal integrity at nanosecond edge rates. I designed and integrated all aspects of the diagnostic system, including a lab-constrained optical layout and alignment, software for triggering and synchronizing the ignition, high-speed cameras, the light source, and an impedance-controlled PCB. The most challenging aspect was correctly designing the PCB to maximize signal integrity at such high edge rates. My design required a thorough understanding of each component and the underlying physics of how signals behave at high speeds. Layering, trace characteristics, grounding, component placement, via placement, and shielding, all needed to be considered when designing the circuit to minimize loss and rise time. Throughout this project, I gained valuable experience with design, experimental testing, and complex systems.
+      </p>
+
+      <!-- Report link -->
+      <a class="btn btn-primary btn-lg"
+         href="reports/Thesis_Complete.pdf"
+         target="_blank" rel="noopener">
+        View Thesis Report (PDF)
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light border-top mt-5">
+    <div class="container thesis-wrap py-4">
+      <div class="row align-items-center g-2">
+        <div class="col-md-6">
+          <div class="fw-semibold">Drew Crix</div>
+          <div class="text-muted small">
+            <a href="mailto:d.crix@queensu.ca">d.crix@queensu.ca</a>
+            <span class="mx-2">•</span>
+            Toronto, ON
+          </div>
+        </div>
+
+        <div class="col-md-6 text-md-end">
+          <a class="me-3" href="https://www.linkedin.com/in/drewcrix/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="me-3" href="https://github.com/drewcrix" target="_blank" rel="noopener">GitHub</a>
+          <a href="reports/CV.pdf" target="_blank" rel="noopener">Resume</a>
+          <div class="text-muted small mt-2">© <span id="year"></span> Drew Crix</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Drew Crix</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <style>
+    body {
+      padding-top: 80px;
+    }
+    .contact-title {
+      font-size: 2.25rem;
+      font-weight: 600;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" id="title" href="drewcrixwebsite.html">Drew Crix</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link" href="drewcrixwebsite.html">Home</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Featured Projects
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="thesis.html">Thesis</a></li>
+            <li><a class="dropdown-item" href="recycling-sorter.html">Recycling Sorter</a></li>
+            <li><a class="dropdown-item" href="waterborne-gpr.html">Waterborne GPR Experiment</a></li>
+            <li><a class="dropdown-item" href="hotspot-tracker.html">Hotspot Communication Tracker</a></li>
+            <li><a class="dropdown-item" href="brainwaves-ssl.html">Interpreting Brainwaves with SSL</a></li>
+            <li><a class="dropdown-item" href="Competitions.html">Competitions</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="about_me.html">About</a></li>
+        <li class="nav-item"><a class="btn btn-primary ms-2" href="contact.html">Contact</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+<!-- Contact Section -->
+<div class="container py-5">
+  <div class="row align-items-center g-5">
+
+    <!-- Left text -->
+    <div class="col-md-5">
+      <h1 class="contact-title" id="contact-text">Contact Me</h1>
+    <p class="lead contact-intro mt-3">
+        If you’re interested in my work, know of any job openings I’d be a good fit for,
+        or just want to say hello, feel free to reach out using the form!
+    </p>
+
+    </div>
+
+    <!-- Form -->
+    <div class="col-md-7">
+      <form
+        class="contact-form needs-validation"
+        novalidate
+        method="POST"
+        action="https://formspree.io/f/mdaelweb">
+
+        <div class="row g-3">
+
+          <div class="col-md-6">
+            <label class="form-label">First Name</label>
+            <input class="form-control" name="firstName" id="firstName" required>
+            <div class="invalid-feedback">Enter your first name.</div>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label">Last Name</label>
+            <input class="form-control" name="lastName" id="lastName" required>
+            <div class="invalid-feedback">Enter your last name.</div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">Email</label>
+            <input class="form-control" type="email" name="email" required>
+            <div class="invalid-feedback">Enter a valid email.</div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" name="message" rows="5" required></textarea>
+            <div class="invalid-feedback">Enter a message.</div>
+          </div>
+
+          <!-- Email subject -->
+          <input type="hidden" name="_subject" id="emailSubject" value="New website message">
+
+          <div class="col-12">
+            <button class="btn btn-primary px-4" type="submit">
+              Send Message
+            </button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Validation + subject logic -->
+<script>
+  // Bootstrap validation
+  (() => {
+    const form = document.querySelector('.needs-validation');
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add('was-validated');
+    });
+  })();
+
+  // Put sender name into email subject
+  const first = document.getElementById("firstName");
+  const last = document.getElementById("lastName");
+  const subject = document.getElementById("emailSubject");
+
+  function updateSubject() {
+    const name = `${first.value} ${last.value}`.trim();
+    subject.value = name
+      ? `New message from ${name}`
+      : "New website message";
+  }
+
+  first.addEventListener("input", updateSubject);
+  last.addEventListener("input", updateSubject);
+</script>
+<!-- Footer -->
+<footer class="bg-light border-top mt-5 fixed-bottom">
+  <div class="container py-4">
+    <div class="row align-items-center gy-3">
+
+      <!-- Left -->
+      <div class="col-md-6 text-center text-md-start">
+        <div class="fw-semibold">Drew Crix</div>
+        <div class="text-muted small">
+          <a href="mailto:d.crix@queensu.ca">d.crix@queensu.ca</a>
+          <span class="mx-2">•</span>
+          Toronto, ON
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="col-md-6 text-center text-md-end">
+        <a class="me-3" href="https://www.linkedin.com/in/drewcrix" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="me-3" href="https://github.com/drewcrix" target="_blank" rel="noopener">GitHub</a>
+        <a href="reports/CV.pdf" target="_blank" rel="noopener">Resume</a>
+        <div class="text-muted small mt-2">
+          © <span id="year"></span> Drew Crix
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+</body>
+</html>
+

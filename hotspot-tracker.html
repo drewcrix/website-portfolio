@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Hotspot Communication Tracker project details for Drew Crix." />
+  <meta name="author" content="Drew Crix" />
+  <title>Hotspot Communication Tracker | Drew Crix</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .project-wrap { max-width: 900px; }
+
+    /* Image: responsive, centered, and capped in size (best practice) */
+    .project-img {
+      max-width: 720px;
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media (min-width: 992px) {
+      .project-img {
+        max-width: 780px;
+      }
+    }
+
+    .meta-badges .badge {
+      border: 1px solid #dee2e6;
+      background-color: #f8f9fa;
+      color: #212529;
+      font-weight: 500;
+    }
+
+    footer a { text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+
+<body>
+  <!-- Same navbar (matches your homepage structure) -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" id="title" href="drewcrixwebsite.html">Drew Crix</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="drewcrixwebsite.html">Home</a></li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="drewcrixwebsite.html#features" role="button">Featured Projects</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="thesis.html">Thesis</a></li>
+              <li><a class="dropdown-item" href="recycling-sorter.html">Recycling Sorter</a></li>
+              <li><a class="dropdown-item" href="waterborne-gpr.html">Waterborne GPR Experiment</a></li>
+              <li><a class="dropdown-item" href="Competitions.html">Competitions</a></li>
+              <li><a class="dropdown-item" href="brainwaves-ssl.html">Interpreting Brainwaves with SSL</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="about_me.html">About</a></li>
+          <li class="nav-item"><a class="btn btn-primary ms-2" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container project-wrap">
+
+      <!-- Image FIRST -->
+      <div class="mb-4">
+        <img src="hotspot.png" class="img-fluid project-img" alt="Hotspot communication tracker image" id="hotspot-image">
+      </div>
+
+      <!-- Title -->
+      <h1 class="fw-bold mb-2">Hotspot Communication Tracker</h1>
+
+      <!-- Timeline + badges -->
+      <div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+        <span class="text-muted small me-2">May 2022 - August 2022</span>
+        <div class="meta-badges d-flex flex-wrap gap-2">
+          <span class="badge rounded-pill">Fullstack Development</span>
+          <span class="badge rounded-pill">Self Learning</span>
+          <span class="badge rounded-pill">PHP</span>
+          <span class="badge rounded-pill">SQL (MSSQL, MySQL)</span>
+        </div>
+      </div>
+
+      <h2 class="section-heading">
+        <a href="#project-overview" class="section-link">Project Overview</a>
+      </h2>
+      <p id = "project-overview" class = "lead mb-4">
+        This project focused on designing a communication and document management system for Sunnybrook employers and employees. Employers can track training completion, manage documents, and post updates, while employees have a centralized location for required training and receive notifications when new training is assigned. The system improves organization and real-time communication by tracking document status changes such as posting, updating, completion, or holds. The website was built using PHP and JavaScript for the backend, HTML and CSS for the frontend, and an SQL database was used to store neccessary information and was secured against injection through careful handling of the backend code. The website has two main access portals. One for general users and one for administrators. The accessbility on the admin level is the dependent on the role, while general users only have access to the documents they have been assigned.
+      </p>
+      <h2 class="section-heading">
+        <a href="#approach" class="section-link">Approach</a>
+      </h2>
+      <p id="approach" class="lead mb-4">
+              
+              Having little to no experience with any of the languages including
+              SQL databases I spent the first month learning all these topics.
+              While learning I began setting up an overall plan of how the
+              system would be designed. The next month and a half were spent
+              developing and testing the backend code through the terminal and
+              setting up all necessary file paths. Once the server was online to
+              run the website the rest of the time was spent testing, debugging, and adding new features.
+              to improve the backend of the site and the overall design. The
+              final few weeks were spent on documentation and final edits to
+              properly setup the project for future use
+      </p>
+
+      <!-- Report link -->
+      <a class="btn btn-primary btn-lg" href="reports/Studentship_Summary_Report.pdf" target="_blank" rel="noopener">
+        View Report (PDF)
+      </a>
+      <a id = "code" class="btn btn-secondary btn-lg" href="https://github.com/drewcrix/Virtual-Communication-Tracker" target="_blank" rel="noopener">
+        View Code (GitHub)
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light border-top mt-5">
+    <div class="container project-wrap py-4">
+      <div class="row align-items-center g-2">
+        <div class="col-md-6">
+          <div class="fw-semibold">Drew Crix</div>
+          <div class="text-muted small">
+            <a href="mailto:d.crix@queensu.ca">d.crix@queensu.ca</a>
+            <span class="mx-2">•</span>
+            Toronto, ON
+          </div>
+        </div>
+
+        <div class="col-md-6 text-md-end">
+          <a class="me-3" href="https://www.linkedin.com/in/drewcrix/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="me-3" href="https://github.com/drewcrix" target="_blank" rel="noopener">GitHub</a>
+          <a href="reports/CV.pdf" target="_blank" rel="noopener">Resume</a>
+          <div class="text-muted small mt-2">© <span id="year"></span> Drew Crix</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -87,6 +87,12 @@
         method="POST"
         action="https://formspree.io/f/mdaelweb">
 
+        <!-- Honeypot (bots fill this, humans don't) -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+        <!-- Optional redirect after submit -->
+        <!-- <input type="hidden" name="_next" value="https://YOURDOMAIN/thanks.html"> -->
+
         <div class="row g-3">
 
           <div class="col-md-6">

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Brainwave interpretation with self-supervised learning project details for Drew Crix." />
   <meta name="author" content="Drew Crix" />
-  <title>Interpreting Brainwaves with SSL | Drew Crix</title>
+  <title>EEG Foundation Model for Heterogeneous Sensor Layouts Trained with Task-Switch Contrastive Learning | Drew Crix</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" />
@@ -103,13 +103,14 @@
         <a href="#project-overview" class="section-link">Project Overview and Role</a>
       </h2>
       <p class="lead mb-4" id = "project-overview">
-        Currently, I am part of a team working on improving the existing BENDR framework for performing self supervised learning on EEG data. A key limitation of the BENDR approach is that it does not handle different sensory layouts accurately. To address this, my team and I proposed including a graph neural network to reduce the multi-channel EEG data. I am responsible for this aspect of the project. I am reducing the time series of each electrode by 1D convolutions, constructing an adjacency matrix where each vertex is an electrode and each edge links spatially adjacent electrodes, inputting the graph structure and node features into a graph neural network, and then passing the resultant embeddings through a latent space alignment block. This enables robustness across varying sensor layouts and incorporates both temporal and spatial information. My role in this project has provided me with a more profound knowledge of neural networks and their applications. However, more importantly, I have strengthened my skills in literature review. I was required to rely on research skills and prior knowledge to understand technical papers in a field I was unfamiliar with. Through this, I’ve learned that many scientific breakthroughs are a result of finding new approaches to existing ideas, requiring the ability to interpret current literature.
+        Currently, I am part of a team working on improving the existing BENDR framework for performing self-supervised learning on EEG data. The key limitations of the BENDR approach are that BENDR assumes a fixed electrode configuration and training objectives that ignore the cognitive structure of brain signals. To address this, my team and I proposed incorporating a graph neural network encoder for each dataset to compress multi-channel EEG data, improving robustness across varying channel layouts, and introducing a neuroscience-grounded contrastive loss that groups brain recordings by mental state rather than by time alone. My role in this project has provided me with a more profound knowledge of neural networks and their applications. However, more importantly, I have strengthened my skills in literature review. I was required to rely on research skills and prior knowledge to understand technical papers in a field I was unfamiliar with. Through this, I’ve learned that many scientific breakthroughs are a result of finding new approaches to existing ideas, requiring the ability to interpret current literature.
       </p>
 
       <!-- Report link -->
-      <a class="btn btn-primary btn-lg" href="https://github.com/drewcrix/EEG-SSL/tree/main" target="_blank" rel="noopener">
+      <a class="btn btn-primary btn-lg" href="https://github.com/drewcrix/EEG-SSL-Fork/tree/main" target="_blank" rel="noopener">
         View Code (GitHub)
       </a>
+      <a href="reports/CV.pdf" target="_blank" rel="noopener">Resume</a>
 
     </div>
   </main>

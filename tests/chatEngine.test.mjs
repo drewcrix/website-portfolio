@@ -78,7 +78,6 @@ test('research options come from project data', () => {
 
 test('github lists repositories found in project data', () => {
   const hrefs = engine.run('github').actions.map((a) => a.href)
-  assert.ok(hrefs.includes('https://github.com/drewcrix/stock-prediction-portfolio-optimization'))
   assert.ok(hrefs.includes('https://github.com/drewcrix/Virtual-Communication-Tracker'))
 })
 

@@ -9,17 +9,17 @@ export const home = {
   // Short focus labels shown under the hero buttons. Each one is an existing
   // project skill badge and links to that project.
   focus: [
-    { label: 'Signal Integrity', project: 'thesis' },
-    { label: 'Graph Neural Networks', project: 'brainwaves-ssl' },
+    { label: 'Robotics', project: 'bayesian-estimator' },
+    { label: 'Machine Learning', project: 'brainwaves-ssl' },
     { label: 'Computer Vision', project: 'recycling-sorter' },
-    { label: 'Geophysics', project: 'waterborne-gpr' },
+    { label: 'Systems Engineering', project: 'thesis' },
   ],
   // Floating highlight cards around the headshot. Wording is taken from the
   // project pages (see the linked project for the full context).
   highlights: [
-    { label: 'Spotlight Paper Award', sub: 'CUCAI 2026', icon: 'award', project: 'brainwaves-ssl' },
-    { label: 'Most Implementable Award', sub: 'How to Change the World', icon: 'idea', project: 'competitions', hash: 'HtCtW' },
-    { label: 'Four-layer PCB', sub: 'Thesis', icon: 'pcb', project: 'thesis' },
+    { label: 'Spotlight Paper Award', sub: 'CUCAI 2026', icon: 'idea', project: 'brainwaves-ssl' },
+    { label: 'Most Improved Athlete Award', sub: 'Varsity Rowing', icon: 'award', project: 'competitions'},
+    { label: 'High Speed PCB Design', sub: 'Thesis', icon: 'pcb', project: 'thesis' },
   ],
 }
 
@@ -27,7 +27,7 @@ export const about = {
   name: 'Drew Crix',
   title: 'Engineering Physics (Mechanical)',
   heading: 'About Me',
-  bio: "Hi I'm Drew! — I am an Engineering Physics student at Queen's University. I strive to contribute to society in a meaningful way through my service, innovation, and work. I am a quick learner with a positive outlook, enthusiastic, and hard working. I am excited and passionate about the current developments leading towards a sustainable future and I am eager to apply scientific and engineering principles to contribute towards these goals. I am always looking for great opportunities! Feel free to reach out anytime.",
+  bio: "Hi I'm Drew! — I am a recent Engineering Physics graduate at Queen's University. I strive to contribute to society in a meaningful way through my service, innovation, and work. I am a quick learner with a positive outlook, enthusiastic, and hard working. I am excited and passionate about the current developments leading towards a sustainable future and I am eager to apply scientific and engineering principles to contribute towards these goals. I am always looking for great opportunities! Feel free to reach out anytime.",
   education: {
     heading: 'Education',
     entries: [

@@ -137,7 +137,7 @@
     {
       "slug": "waterborne-gpr",
       "navLabel": "Waterborne GPR Experiment",
-      "featured": true,
+      "featured": false,
       "categories": ["Research"],
       "card": {
         "title": "Waterborne GPR Research Project",
@@ -222,6 +222,107 @@
       "chatbot": {
         "keywords": ["eeg", "brainwave", "brainwaves", "brain", "ssl", "self-supervised", "self supervised", "bendr", "graph neural network", "graph neural networks", "gnn", "contrastive", "cucai", "qmind", "neuro", "neuroscience", "electroencephalography", "foundation model"],
         "intro": "Drew worked on developing a self-supervised learning framework for EEG data using graph neural networks and contrastive learning. Let me take you to the project!"
+      }
+    },
+    {
+      "slug": "eduphysics",
+      "navLabel": "EduPhysics",
+      "featured": true,
+      "categories": ["Software"],
+      "card": {
+        "title": "EduPhysics",
+        "description": "An interactive physics education platform for engineering students, featuring an orbit determination simulator and a fluid flow simulator, with more physics simulations planned."
+      },
+      "title": "EduPhysics: Interactive Physics Simulators for Engineering Students",
+      "date": "Nov 2026 - Current",
+      "badges": ["C++", "Python", "WebAssembly", "React / TypeScript", "State Estimation Algorithms", "Computational Fluid Dynamics"],
+      "image": {
+        "file": "eduphysics.jpg",
+        "alt": "Mission Control Academy welcome screen showing a spacecraft's true and estimated orbit around Earth",
+        "width": 1440,
+        "height": 900
+      },
+      "sections": [
+        {
+          "id": "overview",
+          "heading": "Overview",
+          "paragraphs": [
+            "EduPhysics is an interactive physics education platform I am building for engineering students. Each simulator pairs a real numerical model with the theory behind it, and every result in the interface is labelled for what it is: simulation, analytical theory, published data, or a conceptual sketch. The platform is organized as a monorepo with a shared landing page and UI package, and each simulator is a self-contained app assembled into a single static site."
+          ]
+        },
+        {
+          "id": "orbital",
+          "heading": "Orbit Determination Simulator",
+          "paragraphs": [
+            "In **Mission Control Academy**, students play a flight-dynamics operator tracking a spacecraft from noisy measurements. The site includes guided missions covering topics such as common state estimation techniques, tuning sensor and process noise covariance matrices, planned and unplanned orbital maneuvers, observability, dead reckoning, and head-to-head comparisons of estimators. A debrief then scores accuracy, uncertainty calibration, tracking cost, and mission success separately. All of the orbital dynamics, RK4 integration, sensor models, and estimators (extended and unscented Kalman filters, a particle filter, and a linear Kalman filter) are written in C++20 with Eigen and compiled to WebAssembly. They run live in the browser inside a Web Worker, while React, three.js, and uPlot render the 3D orbit, uncertainty ellipsoids, and diagnostics such as NEES and NIS."
+          ]
+        },
+        {
+          "id": "fluids",
+          "heading": "Fluid Flow Simulator",
+          "paragraphs": [
+            "**Airfoil Flow Lab** explores viscous, incompressible flow around NACA 0012, 2412, 23012, and 2213 airfoils at varying Reynolds numbers. I wrote a Python cut-cell Navier–Stokes solver on a stretched, staggered (MAC) grid and used it to precompute over a hundred cases offline, so the React viewer loads them instantly. The viewer shows flow fields with streamlines and stagnation points, surface pressure and skin friction, and lift and drag curves. It also includes a boundary-condition explorer and lessons on varying topic in fluid dynamics including thin airfoil theory, Navier-Stokes equations, high lift devices, vorticity, and more. I validated the solver against published circular-cylinder benchmarks and with a grid-convergence study."
+          ]
+        },
+        {
+          "id": "engineering",
+          "heading": "What's Next",
+          "paragraphs": [
+            "I am currently working on a new simulator for **Music Synthesis** that will explore the physics of sound waves and do a technical deep dive into foundational topics in acoustics, including the wave equation, Fourier analysis, and resonance. The simulator will allows students to create their own music and explore how different parameters affect the sound produced. Stay Tuned!"
+          ]
+        }
+      ],
+      "links": [
+        { "label": "Visit Website", "href": "https://drewcrix.github.io/EduPhysics/", "kind": "website" },
+        { "label": "View Code (GitHub)", "href": "https://github.com/drewcrix/EduPhysics", "kind": "github" }
+      ],
+      "repository": "https://github.com/drewcrix/EduPhysics",
+      "seo": {
+        "title": "EduPhysics",
+        "description": "EduPhysics project details for Drew Crix: interactive physics simulators for engineering students."
+      },
+      "chatbot": {
+        "keywords": ["eduphysics", "edu physics", "physics education", "physics simulator", "physics simulators", "physics simulation", "simulator", "simulators", "orbit", "orbital", "orbit determination", "spacecraft", "mission control", "kalman", "kalman filter", "ekf", "ukf", "particle filter", "state estimation", "webassembly", "wasm", "c++", "eigen", "fluid", "fluids", "fluid flow", "cfd", "navier-stokes", "navier stokes", "airfoil", "airfoils", "naca", "aerodynamics", "reynolds"],
+        "intro": "EduPhysics is Drew's interactive physics education platform for engineering students. It features an orbit determination simulator built in C++ and WebAssembly, plus a Navier–Stokes airfoil flow simulator, with more simulations on the way. Let me take you to the project!"
+      }
+    },
+    {
+      "slug": "bayesian-estimator",
+      "navLabel": "Novel Bayesian Estimator",
+      "featured": false,
+      "categories": ["Research", "Robotics"],
+      "card": {
+        "title": "Novel Bayesian Estimator",
+        "description": "Co-developing a novel ensemble-based Bayesian state estimator for nonlinear, non-Gaussian robotic systems, benchmarked against the EKF, UKF, and Particle Filter."
+      },
+      "title": "Novel Bayesian Estimator",
+      "date": "June 2026 - Current",
+      "badges": ["ROS2", "Bayesian Inference", "State Estimation", "Robotics", "Optimization", "Python", "C++"],
+      "image": {
+        "file": "estimator.jpg",
+        "alt": "Novel Bayesian estimator project image",
+        "width": 1536,
+        "height": 1024
+      },
+      "sections": [
+        {
+          "id": "overview",
+          "heading": "Overview",
+          "paragraphs": [
+            "State estimation is a fundamental component of modern robotics, enabling systems to infer their internal states from noisy and incomplete sensor measurements. However, conventional estimation techniques can struggle with highly nonlinear systems and non-Gaussian uncertainty. To address these limitations, I am co-developing a novel Bayesian state estimator that uses ensemble-based sampling to more accurately represent posterior uncertainty and improve estimation performance in challenging environments.",
+            "I have implemented the algorithm in Python and C++ and am benchmarking its performance against established approaches, including the Extended Kalman Filter, Unscented Kalman Filter, and Particle Filter, with promising initial results. The algorithm will be validated in a real-world, dynamic environment using a physical differential-drive robot.",
+            "This ongoing research has strengthened my expertise in Bayesian inference, nonlinear state estimation, optimization, and robotics, with the goal of contributing to a forthcoming research publication."
+          ]
+        }
+      ],
+      "links": [],
+      "seo": {
+        "title": "Novel Bayesian Estimator",
+        "description": "Novel Bayesian state estimator research project details for Drew Crix."
+      },
+      "chatbot": {
+        "keywords": ["bayesian", "bayesian estimator", "bayesian inference", "estimator", "ensemble", "posterior", "nonlinear estimation", "non-gaussian", "robot", "robotics", "differential drive", "differential-drive", "ros", "ros2", "optimization"],
+        "intro": "Drew is co-developing a novel Bayesian state estimator that uses ensemble-based sampling to better represent uncertainty in nonlinear, non-Gaussian robotic systems, with validation planned on a physical differential-drive robot. Let me take you to the project!"
       }
     },
     {

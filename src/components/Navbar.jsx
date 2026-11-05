@@ -36,7 +36,7 @@ export default function Navbar() {
             <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-to-br from-navy-800 to-navy-950 font-display text-sm font-bold tracking-tight text-white shadow-sm transition group-hover:rotate-[-4deg]">
               DC
             </span>
-            <span className="font-display text-lg font-semibold tracking-tight text-navy-950">{site.name}</span>
+            <span className="font-display text-lg font-semibold tracking-tight text-navy-950">{site.name}</span> 
           </Link>
         </BuildSlot>
 
@@ -98,7 +98,7 @@ function DesktopLink({ item }) {
     >
       {({ isActive }) => (
         <>
-          {isActive && <motion.span layoutId="nav-active" className="absolute inset-0 -z-10 rounded-full bg-navy-50 ring-1 ring-navy-100" transition={{ type: 'spring', stiffness: 400, damping: 32 }} />}
+          {isActive && <motion.span layoutId="nav-active" className="absolute inset-x-1 inset-y-0 -z-10 rounded-full bg-navy-50 ring-1 ring-navy-100" transition={{ type: 'spring', stiffness: 400, damping: 32 }} />}
           {item.label}
         </>
       )}

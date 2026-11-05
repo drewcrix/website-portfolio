@@ -273,7 +273,7 @@
         }
       ],
       "links": [
-        { "label": "Visit Website", "href": "https://drewcrix.github.io/EduPhysics/", "kind": "website" },
+        { "label": "Visit Website", "href": "https://drewcrix.github.io/EduPhysics/", "kind": "external" },
         { "label": "View Code (GitHub)", "href": "https://github.com/drewcrix/EduPhysics", "kind": "github" }
       ],
       "repository": "https://github.com/drewcrix/EduPhysics",

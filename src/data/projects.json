@@ -273,6 +273,7 @@
         }
       ],
       "links": [
+        { "label": "Visit Website", "href": "https://drewcrix.github.io/EduPhysics/", "kind": "website" },
         { "label": "View Code (GitHub)", "href": "https://github.com/drewcrix/EduPhysics", "kind": "github" }
       ],
       "repository": "https://github.com/drewcrix/EduPhysics",
@@ -288,7 +289,7 @@
     {
       "slug": "bayesian-estimator",
       "navLabel": "Novel Bayesian Estimator",
-      "featured": true,
+      "featured": false,
       "categories": ["Research", "Robotics"],
       "card": {
         "title": "Novel Bayesian Estimator",

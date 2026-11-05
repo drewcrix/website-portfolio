@@ -1,0 +1,283 @@
+{
+  "projects": [
+    {
+      "slug": "thesis",
+      "navLabel": "Thesis",
+      "featured": true,
+      "categories": ["Research", "Engineering Design"],
+      "card": {
+        "title": "Diagnostic system for flow visualization of a detonation wave",
+        "description": "This thesis project focuses on the end-to-end design of a diagnostic system for flow visualization including a high-speed four-layer PCB for LED control."
+      },
+      "title": "Schlieren Diagnostic System for Flow Visulaization",
+      "date": "Sept 2024 – Apr 2025",
+      "badges": ["DAQ", "LTspice", "KiCad/Altium", "LabVIEW", "Optics", "Signal Integrity"],
+      "image": {
+        "file": "detonation-pulse.jpg",
+        "alt": "Thesis project figure",
+        "width": 1200,
+        "height": 1164
+      },
+      "sections": [
+        {
+          "paragraphs": [
+            "My thesis involved the end-to-end design and calibration of a schlieren imaging system for detonation diagnostics, as well as the development of a four-layer, current-amplifying PCB for high-speed LED pulsing, capable of maintaining signal integrity at nanosecond edge rates. I designed and integrated all aspects of the diagnostic system, including a lab-constrained optical layout and alignment, software for triggering and synchronizing the ignition, high-speed cameras, the light source, and an impedance-controlled PCB. The most challenging aspect was correctly designing the PCB to maximize signal integrity at such high edge rates. My design required a thorough understanding of each component and the underlying physics of how signals behave at high speeds. Layering, trace characteristics, grounding, component placement, via placement, and shielding, all needed to be considered when designing the circuit to minimize loss and rise time. Throughout this project, I gained valuable experience with design, experimental testing, and complex systems."
+          ]
+        }
+      ],
+      "links": [
+        { "label": "View Thesis Report (PDF)", "href": "/reports/Thesis_Complete.pdf", "kind": "report" }
+      ],
+      "seo": {
+        "title": "Thesis",
+        "description": "Thesis project details for Drew Crix."
+      },
+      "chatbot": {
+        "keywords": ["thesis", "schlieren", "detonation", "flow visualization", "flow visualisation", "pcb", "led", "optics", "signal integrity", "diagnostic", "ltspice", "labview", "kicad", "altium"],
+        "intro": "Drew's thesis was the end-to-end design of a schlieren diagnostic system for flow visualization of a detonation wave — including a high-speed, four-layer PCB for LED pulsing. Let me take you to the project!"
+      }
+    },
+    {
+      "slug": "recycling-sorter",
+      "navLabel": "Recycling Sorter",
+      "featured": true,
+      "categories": ["Engineering Design", "Machine Learning"],
+      "card": {
+        "title": "Automated Recycling Sorter",
+        "description": "Designed and built with a team of Engineering Physics students to automatically sort plastic, cans, and paper."
+      },
+      "title": "Automated Recycling Sorter",
+      "date": "Sept 2024 - Dec 2024",
+      "badges": ["Microcontrollers", "Engineering Drawings", "Computer Vision", "Economic Analysis"],
+      "image": {
+        "file": "recycling-sorter.jpg",
+        "alt": "Recycling sorter project image",
+        "width": 960,
+        "height": 1100,
+        "position": "center 40%"
+      },
+      "sections": [
+        {
+          "id": "motivation",
+          "heading": "Motivation",
+          "paragraphs": [
+            "With the increasing production of consumables and disposable items, efforts to improve waste management systems have become an increasingly popular topic for governments around the world. Many municipalities have adopted sustainable recycling methods that facilitate the recycling process for citizens and support more environmentally conscience practices. However, these changes can lead to a higher rate of inaccurate sorting of recycling which ultimately causes a significant portion of recyclable items to be incorrectly distributed to landfills. As a result, this project aims to improve this efficiency by developing a proof-of-concept automated recycling sorter that accurately sorts recycling into various bins. The proof-of-concept utilized mechanical components to orchestrate the transportation and distribution of the recycling items. Furthermore, a computer vision program was implemented to sort and distinguish the individual items. Ultimately, this will reduce waste sent to landfills while also prevent pollution, conserve energy, and protect natural resources."
+          ]
+        },
+        {
+          "id": "approach",
+          "heading": "Approach",
+          "paragraphs": [
+            "The project was multifaceted thus requiring a systematic approach to ensure all components were integrated successfully. The tasks were divided among team members and sorted into three main categories: mechanical, electrical, and computing. The mechanical aspect involved designing the sorting apparatus and conveyor belt system requiring percise calculations and engineering drawings. The electrical component involved ensuring proper wiring and power delivery to the motors, as well as integrating the computer vision system with the mechanical components. Finally, the computing portion involved designing a convolution neural network to predict the type of recycling item. Further details are included in the report."
+          ]
+        }
+      ],
+      "links": [
+        { "label": "View Report (PDF)", "href": "/reports/Capstone_Project.pdf", "kind": "report" }
+      ],
+      "seo": {
+        "title": "Recycling Sorter",
+        "description": "Recycling Sorter project details for Drew Crix."
+      },
+      "chatbot": {
+        "keywords": ["recycling", "recycle", "sorter", "sorting", "capstone", "conveyor", "computer vision", "cnn", "convolution", "waste", "landfill", "microcontroller", "microcontrollers"],
+        "intro": "Drew and a team of Engineering Physics students designed and built an automated recycling sorter that sorts plastic, cans, and paper — combining mechanical design with a computer vision program. Taking you there now!"
+      }
+    },
+    {
+      "slug": "hotspot-tracker",
+      "navLabel": "Hotspot Communication Tracker",
+      "featured": false,
+      "categories": ["Software"],
+      "card": {
+        "title": "Hotspot Communication Tracker",
+        "description": "Built a communication dissemination system for training management at Sunnybrook Hospital."
+      },
+      "title": "Hotspot Communication Tracker",
+      "date": "May 2022 - August 2022",
+      "badges": ["Fullstack Development", "Self Learning", "PHP", "SQL (MSSQL, MySQL)"],
+      "image": {
+        "file": "hotspot-tracker.png",
+        "alt": "Hotspot communication tracker image",
+        "width": 1500,
+        "height": 375,
+        "fit": "contain",
+        "background": "#0b0f14"
+      },
+      "sections": [
+        {
+          "id": "project-overview",
+          "heading": "Project Overview",
+          "paragraphs": [
+            "This project focused on designing a communication and document management system for Sunnybrook employers and employees. Employers can track training completion, manage documents, and post updates, while employees have a centralized location for required training and receive notifications when new training is assigned. The system improves organization and real-time communication by tracking document status changes such as posting, updating, completion, or holds. The website was built using PHP and JavaScript for the backend, HTML and CSS for the frontend, and an SQL database was used to store neccessary information and was secured against injection through careful handling of the backend code. The website has two main access portals. One for general users and one for administrators. The accessbility on the admin level is the dependent on the role, while general users only have access to the documents they have been assigned."
+          ]
+        },
+        {
+          "id": "approach",
+          "heading": "Approach",
+          "paragraphs": [
+            "Having little to no experience with any of the languages including SQL databases I spent the first month learning all these topics. While learning I began setting up an overall plan of how the system would be designed. The next month and a half were spent developing and testing the backend code through the terminal and setting up all necessary file paths. Once the server was online to run the website the rest of the time was spent testing, debugging, and adding new features. to improve the backend of the site and the overall design. The final few weeks were spent on documentation and final edits to properly setup the project for future use"
+          ]
+        }
+      ],
+      "links": [
+        { "label": "View Report (PDF)", "href": "/reports/Studentship_Summary_Report.pdf", "kind": "report" },
+        { "label": "View Code (GitHub)", "href": "https://github.com/drewcrix/Virtual-Communication-Tracker", "kind": "github", "variant": "secondary" }
+      ],
+      "repository": "https://github.com/drewcrix/Virtual-Communication-Tracker",
+      "seo": {
+        "title": "Hotspot Communication Tracker",
+        "description": "Hotspot Communication Tracker project details for Drew Crix."
+      },
+      "chatbot": {
+        "keywords": ["hotspot", "sunnybrook", "hospital", "communication tracker", "php", "sql", "mysql", "mssql", "full stack", "fullstack", "web development", "studentship", "training management"],
+        "intro": "At Sunnybrook Hospital, Drew built a communication and document management system for training management — a full-stack PHP, JavaScript, and SQL project. Here it is!"
+      }
+    },
+    {
+      "slug": "waterborne-gpr",
+      "navLabel": "Waterborne GPR Experiment",
+      "featured": true,
+      "categories": ["Research"],
+      "card": {
+        "title": "Waterborne GPR Research Project",
+        "description": "Investigated subsurface stratigraphy and bathymetry mapping using waterborne ground-penetrating radar."
+      },
+      "title": "Waterborne GPR Experiment",
+      "date": "Sept 2025 - Dec 2025",
+      "badges": ["Geophysics", "Field Testing", "Signal Processing", "Data Analysis", "GPR"],
+      "image": {
+        "file": "waterborne-gpr.jpg",
+        "alt": "Waterborne GPR experiment image",
+        "width": 1200,
+        "height": 1600,
+        "position": "center 62%"
+      },
+      "sections": [
+        {
+          "id": "objective",
+          "heading": "Motivation and Objective",
+          "paragraphs": [
+            "Underwater mapping is traditionally performed using sonar systems for bathymetric surveys and sub-bottom profilers for imaging subsurface stratigraphy. An alternative method for underwater mapping involves using ground penetrating radar (GPR). Limited research has been conducted with this approach because of the attenuation of electromagnetic waves in water, reducing the capability. However, if proven effective in certain conditions, this method would provide higher resolution multi-parameter imaging and allow for data collection in less accessible areas. This project aims to determine the feasibility and effectiveness of untilizing ground penetrating radar paired with an autonomous surface vehicle in shallow water environments. The project required a thorough understanding of electromagnetic wave propagation in water, GPR system operation, and data processing techniques."
+          ]
+        },
+        {
+          "id": "approach",
+          "heading": "Approach",
+          "paragraphs": [
+            "The GPR system was the MALA ProEx GPR equipped with a 250MHz antenna. The GPR was placed on a floatation device with minimal air between the antenna and the water to minimize signal loss due to reflections. The floatation device was then attached to the autonomous surface vehicle (ASV) via a rope system and the ASV was controlled with a handheld remote. MalaVision was used to process the GPR data and multiple filters were applied to generate suitable radargrams for interpretation. Through analysis of the data collected it was clear that waterborne GPR can be effective in shallow water environments. The rough bathymetry of the area was successfully mapped and several subsurface features were identified. Further details are included in the report."
+          ]
+        }
+      ],
+      "links": [
+        { "label": "View Report (PDF)", "href": "/reports/GPR.pdf", "kind": "report" }
+      ],
+      "seo": {
+        "title": "Waterborne GPR Experiment",
+        "description": "Waterborne GPR Experiment project details for Drew Crix."
+      },
+      "chatbot": {
+        "keywords": ["gpr", "ground penetrating", "ground-penetrating", "radar", "waterborne", "geophysics", "bathymetry", "bathymetric", "autonomous surface vehicle", "asv", "stratigraphy", "underwater", "sonar"],
+        "intro": "Drew investigated the feasibility of pairing ground-penetrating radar with an autonomous surface vehicle to map bathymetry and subsurface stratigraphy in shallow water. Let me show you!"
+      }
+    },
+    {
+      "slug": "brainwaves-ssl",
+      "navLabel": "Interpreting Brainwaves with SSL",
+      "featured": true,
+      "categories": ["Research", "Machine Learning"],
+      "card": {
+        "title": "Interpreting Brainwaves with SSL",
+        "description": "Integrating Neurological Priors Into Self Supervised Learning for Electroencephalography. Focusing on reducing the multi-channel EEG data using graph neural networks"
+      },
+      "title": "EEG Foundation Model for Heterogeneous Sensor Layouts Trained with Task-Switch Contrastive Learning",
+      "date": "Oct 2025 - Current",
+      "badges": ["EEG data analysis", "Contrastive Learning", "Graph Neural Networks", "Python"],
+      "image": {
+        "file": "adjacency-matrix.png",
+        "alt": "Brainwaves SSL adjacency matrix image",
+        "width": 640,
+        "height": 480,
+        "fit": "contain",
+        "background": "#ffffff"
+      },
+      "sections": [
+        {
+          "id": "project-overview",
+          "heading": "Project Overview and Role",
+          "paragraphs": [
+            "My team and I worked on developing a general purpose foundation model for electroencephalography (EEG) data using selfsupervised learning. Our team focused on addressing the challenges and improving on the approach that was used in the paper titled ' BErt-inspired Neural Data Representations (BENDR)'. The key limitations of the BENDR approach are that BENDR assumes a fixed electrode configuration and training objectives that ignore the cognitive structure of brain signals. To address this, my team and I proposed incorporating a graph neural network encoder for each dataset to compress multi-channel EEG data, improving robustness across varying channel layouts, and introducing a neuroscience-grounded contrastive loss that groups brain recordings by mental state rather than by time alone. My role in this project has provided me with a more profound knowledge of neural networks and their applications. I developed a hybrid CNN-GNN encoder for EEG representation learning, combining 1D convolutions to extract temporal features with graph convolutions to capture spatial relationships between electrodes. I also assisted in developing the other aspects of our model including the contrastive loss. \n\nBeyond the technical aspects of this project, I also significantly strengthened my literature review and research skills. I was required to rely on research skills and prior knowledge to understand technical papers in a field I was unfamiliar with. Through this, I have learned that many scientific breakthroughs are a result of finding new approaches to existing ideas, requiring the ability to interpret current literature. \n\nMy team and I won the **spotlight paper award** for best paper and presentation overall at the Canadian Undergraduate Conference of AI (CUCAI) 2026!"
+          ]
+        }
+      ],
+      "links": [
+        { "label": "View Code (GitHub)", "href": "https://github.com/drewcrix/EEG-SSL-Fork/tree/main", "kind": "github" },
+        { "label": "Paper", "href": "/reports/QMIND_Paper.pdf", "kind": "report" }
+      ],
+      "repository": "https://github.com/drewcrix/EEG-SSL-Fork",
+      "seo": {
+        "title": "EEG Foundation Model for Heterogeneous Sensor Layouts Trained with Task-Switch Contrastive Learning",
+        "description": "Brainwave interpretation with self-supervised learning project details for Drew Crix."
+      },
+      "chatbot": {
+        "keywords": ["eeg", "brainwave", "brainwaves", "brain", "ssl", "self-supervised", "self supervised", "bendr", "graph neural network", "graph neural networks", "gnn", "contrastive", "cucai", "qmind", "neuro", "neuroscience", "electroencephalography", "foundation model"],
+        "intro": "Drew worked on developing a self-supervised learning framework for EEG data using graph neural networks and contrastive learning. Let me take you to the project!"
+      }
+    },
+    {
+      "slug": "competitions",
+      "navLabel": "Competitions",
+      "featured": false,
+      "categories": ["Competitions"],
+      "card": {
+        "title": "Competitions",
+        "description": "I have participated in hackathons, conferences, and competitions some of which I highlight here."
+      },
+      "title": "Competitions",
+      "badges": ["Teamwork", "Design", "Discipline", "Perseverance"],
+      "image": {
+        "file": "rowing.jpg",
+        "alt": "rowing image",
+        "width": 1800,
+        "height": 1200,
+        "position": "center 60%"
+      },
+      "sections": [
+        {
+          "id": "rowing",
+          "heading": "Varsity Rowing",
+          "date": "Sept 2022 – Current",
+          "paragraphs": [
+            "My time as a varsity athlete on the University of St. Andrews rowing team and Queen's University rowing team has deeply influenced who I am as a person, friend, and leader. Rowing is a sport that demands unwavering commitment and trust in your teammates. The leasons I have learned and the frienships I have made will stick with me for the rest of my life. Although I have been lucky to have many successes with my rowing career the start was not as smooth. Queen’s rowing team requires athletes to meet a challenging fitness standard to be considered for the team. A month before this test, I was a second away from the standard. However, a disappointing turn in events led to me rowing 16 seconds slower than required. Although I could not train with the team that season, I was committed to making the team the following year. After months of consistent eating and exercising habits, I improved my rowing time by 40 seconds. The sacrifices I made, and the limits I pushed myself to, took a toll on me mentally and physically. Every time I fell short of a result I desired, I struggled to believe in the benefits of my hard work. I surprised myself in realizing that my biggest takeaway was not physical achievement, but the understanding that success follows discipline and consistency. Setbacks are inevitable, it is far more important to build resilience so habitual hard work can continue paying off in the long run."
+          ]
+        },
+        {
+          "id": "Asset",
+          "heading": "Asset Management Hackathon",
+          "date": "Sept 2025 – Oct 2025",
+          "paragraphs": [
+            "My teammate and I built predictive models and applied Markowitz optimization to construct portfolios that maximize mean-variance utility. We developed a unique approach that incorporated sentiment analysis, transformer classifiers, and LightGBM regressors to generate expected returns with improved performance metrics. Throughout this project I gained experience on the entire workflow from preprocessing, to prediction, to portfolio optimization, and finally analyzing performance metrics."
+          ]
+        },
+        {
+          "id": "HtCtW",
+          "heading": "How to Change the World Competition",
+          "date": "Sept 2025 – Oct 2025",
+          "paragraphs": [
+            "The How to Change the World program aimed to provide participants a learning journey in which they learn to take a holistic approach to the many global challenges laid out by the United Nations Sustainable Development Goals. Throughout our journey, my team and I focused on the issues around access to affordable and sustainable energy in Inuvik, Northwest Territories. With our proposed solution (winning the **Most Implementable Award**) addressing the high energy cost by filling the gaps in energy and financial literacy that exist between incoming experts and the residents of Inuvik.",
+            "**Notion:** [Read more about ESCRI](https://bit.ly/3blHHje)"
+          ]
+        }
+      ],
+      "links": [],
+      "seo": {
+        "title": "Competitions",
+        "description": "Competitions details for Drew Crix."
+      },
+      "chatbot": {
+        "keywords": ["competition", "competitions", "hackathon", "hackathons", "conference", "conferences", "rowing", "rower", "athlete", "varsity", "sport", "sports", "how to change the world", "asset management", "portfolio optimization", "stock", "stocks", "markowitz", "escri", "inuvik", "lightgbm"],
+        "intro": "Drew has taken part in hackathons, conferences, and competitions — the highlights include varsity rowing, an asset management hackathon, and the How to Change the World competition. Let me show you!"
+      }
+    }
+  ]
+}

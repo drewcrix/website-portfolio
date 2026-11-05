@@ -234,7 +234,7 @@
         "description": "An interactive physics education platform for engineering students, featuring an orbit determination simulator and a fluid flow simulator, with more physics simulations planned."
       },
       "title": "EduPhysics: Interactive Physics Simulators for Engineering Students",
-      "date": "Nov 2026 - Current",
+      "date": "Oct 2026 - Current",
       "badges": ["C++", "Python", "WebAssembly", "React / TypeScript", "State Estimation Algorithms", "Computational Fluid Dynamics"],
       "image": {
         "file": "eduphysics.jpg",
